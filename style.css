@@ -1,0 +1,47 @@
+body {
+	background: rgb(28, 28, 28);
+}
+
+.center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	display: flex;
+	height: device-height;
+	width: device-width;
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes background-gradient {
+	from {
+		background-position: 0% center;
+	}
+
+	to {
+		background-position: -100% center;
+	}
+}
+
+.nazmi {
+	margin: 0;
+	padding: 0;
+	font-family: "Fredoka One", sans-serif;
+	font-size: 10vw;
+	font-weight: 100;
+	color: transparent;
+	background: linear-gradient(to right,
+			rgb(255, 0, 0),
+			rgb(0, 255, 0),
+			rgb(0, 0, 255),
+			rgb(255, 0, 0),
+			rgb(0, 255, 0),
+			rgb(0, 0, 255),
+			rgb(255, 0, 0));
+	background-size: 200%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	animation: background-gradient 2s linear infinite;
+	/*text-shadow: 3px 3px black;*/
+}
